@@ -410,14 +410,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Scikit-learn**: Machine learning algorithms
 - **Open Source Community**: For the amazing Python ecosystem
 
-## � Contact
-
-For questions, suggestions, or collaboration:
-- **GitHub Issues**: [Create an issue](../../issues)
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
-
----
 
 <div align="center">
   <p>Made with ❤️ and Python</p>
