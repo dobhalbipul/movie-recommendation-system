@@ -62,7 +62,65 @@ streamlit run streamlit_app.py
 - **Method**: Weighted combination of algorithms
 - **Default**: 60% collaborative + 40% popularity
 - **Benefit**: Balanced personalization and diversity
-## 📁 Project Structure
+## � Notebooks
+
+### 1. Step-by-Step Development (`movie_recommendation_system.ipynb`)
+
+A comprehensive Jupyter notebook that walks through the entire development process of building three different recommendation systems:
+
+**What it covers:**
+- **Data Exploration & Analysis** - Understanding the MovieLens dataset structure
+- **Data Preprocessing** - Cleaning and preparing data for algorithms
+- **Algorithm Implementation** - Building all three recommendation systems from scratch
+- **Performance Analysis** - Comparing different approaches with visualizations
+
+**Key Learning Sections:**
+1. **Data Insights** - Statistics on movies, users, ratings, and genre distributions
+2. **Popularity-Based System** - Genre-filtered recommendations based on average ratings
+3. **Content-Based System** - Movie similarity using genre features and cosine similarity
+4. **Collaborative Filtering** - User-based recommendations using rating patterns
+5. **Visualizations** - Charts showing rating distributions, genre popularity, and user activity
+
+### 2. Interactive GUI (`interactive_gui.ipynb`)
+
+A user-friendly interface using ipywidgets that lets you test all recommendation systems interactively:
+
+**Features:**
+- 🔥 **Popularity Recommender** - Filter by genre, minimum reviews, and get top-rated movies
+- 🎯 **Content-Based Recommender** - Enter a movie title to find similar movies
+- 👥 **Collaborative Filtering** - Get personalized recommendations based on user ID
+- 🌟 **Hybrid Recommender** - Combine multiple algorithms with custom weights
+- 📊 **Analytics Dashboard** - Visualize dataset statistics and trends
+
+**Interactive Controls:**
+- Dropdown menus for genre selection
+- Sliders for parameters (number of recommendations, similarity thresholds)
+- Text inputs for movie titles and user IDs
+- Real-time weight adjustment for hybrid recommendations
+- Progress bars and loading indicators
+
+### How to Use the Notebooks
+
+1. **For Learning/Development:**
+   ```bash
+   jupyter notebook notebooks/movie_recommendation_system.ipynb
+   ```
+
+2. **For Interactive Testing:**
+   ```bash
+   jupyter notebook notebooks/interactive_gui.ipynb
+   ```
+
+**Requirements for Notebooks:**
+- All dependencies from `requirements.txt`
+- Additional for GUI: `ipywidgets`, `matplotlib`, `seaborn`
+
+**Install additional dependencies:**
+```bash
+pip install ipywidgets matplotlib seaborn
+```
+
+## �📁 Project Structure
 
 ```
 movie-recommendation-system/
@@ -81,7 +139,7 @@ movie-recommendation-system/
 
 - **Backend**: Python, Pandas, NumPy, Scikit-learn
 - **Frontend**: Streamlit with Netflix-style UI
-- **ML**: Cosine Similarity, K-Nearest Neighbors
+- **ML**: Cosine Similarity, User-based Collaborative Filtering
 - **Visualization**: Plotly charts and analytics
 
 ## 🤝 Contributing
